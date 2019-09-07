@@ -1,0 +1,6 @@
+{
+    "OLEDV1.showUserNumber|block": "OLED 显示屏 第%line行|显示数字%n",
+    "OLEDV1.showUserText|block": "OLED 显示屏 第%line行|显示文本%text",
+    "OLEDV1.clear|block": "OLED清屏",
+	"OLEDV1.initDisplay|block":"初始化OLED"
+}
