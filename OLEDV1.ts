@@ -1,4 +1,4 @@
-//% color="#AA278D"  block="OLEDV1"
+//%color="#AA278D"  block="OLEDV1"
 namespace OLEDV1 {
     //% weight=100
     //% blockId=OLEDV1_INIT
@@ -29,9 +29,9 @@ namespace OLEDV1 {
         cmd(0xAF);  // Set display On
         clear();
     }
-    //% weight=60
-    //% blockId=OLEDV1_Clear
-    //% block="clear"
+    //%weight=60
+    //%blockId=OLEDV1_Clear
+    //%block="clear"
     export function clear() {
         cmd(DISPLAY_OFF);   //display off
         for (let j = 0; j < 8; j++) {
@@ -62,11 +62,11 @@ namespace OLEDV1 {
         let c1 = c.charCodeAt(0);
         writeCustomChar(basicFont[c1 - 32]);
     }
-    //% weight=90
-    //% blockId=OLEDV1_Text
-    //% text.defl="DFRobot"
-    //% line.min=0 line.max=7
-    //% block="OLED show line %line|text %text"
+    //%weight=90
+    //%blockId=OLEDV1_Text
+    //%text.defl="DFRobot"
+    //%line.min=0 line.max=7
+    //%block="OLED show line %line|text %text"
     export function showUserText(line: number, text: string) {
 
 
@@ -85,10 +85,10 @@ namespace OLEDV1 {
      * @param line line num (8 pixels per line), eg: 0
      * @param n value , eg: 2019
      */
-    //% weight=90
-    //% blockId=OLEDV1_Nunber
-    //% line.min=0 line.max=7
-    //% block="OLED show line %line|number %n"
+    //%weight=90
+    //%blockId=OLEDV1_Nunber
+    //%line.min=0 line.max=7
+    //%block="OLED show line %line|number %n"
     export function showUserNumber(line: number, n: number) {
         OLEDV1.showUserText(line, "" + n)
     }
