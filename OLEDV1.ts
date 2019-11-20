@@ -1,8 +1,8 @@
 //%color="#AA278D"  block="OLEDV1"
 namespace OLEDV1 {
-    //% weight=100
-    //% blockId=OLEDV1_INIT
-    //% block="INIT_oled"
+    //%weight=100
+    //%blockId=OLEDV1_INIT
+    //%block="INIT_oled"
     export function initDisplay(): void {
         cmd(0xAE);  // Set display OFF
         cmd(0xD5);  // Set Display Clock Divide Ratio / OSC Frequency 0xD4
